@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    background-color: black;
 }
 
 /* .clearfix::after{
@@ -17,31 +22,50 @@
 header {
     width: 100%;
     height: 3em;
-    background-color: red;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+.buttons > * {
+    display: inline-block;
+    margin-right: 1.5em;
+    margin-top: 1.5em;
+}
+
+
+.buttons a {
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 0.3em;
+    border-radius: 5px;
+}
 
 /* main rules */
 
 main {
     width: 100%;
-    height: 39em;
-    background-color: black;
+    padding-top: 4em;
+    height: 100%;
 }
 
 .img-container {
     width: 95%;
-    height: 39em;
+    height: 85vh;
     margin: 0 auto;
     display: flex;
+    gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 
 .img-container img {
     width: 190px;
-    margin: 0.5em;
+    /* margin: 0.4em; */
 }
 
 
@@ -50,9 +74,10 @@ main {
 
 footer {
     width: 100%;
-    height: 5em;
+    height: 1500px;
     background-color: grey;
     position: fixed;
+    display: flex;
 }
 
-/* footer rules */
+
